@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.pattern.mvvm.livedata.MvvmLiveDataFragment">
+
+    <RelativeLayout
+        android:id="@+id/frag1Container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/frag2Container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

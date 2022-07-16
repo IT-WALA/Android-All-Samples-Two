@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ghanekar.vaibhav.allsamples2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ErrorActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".fragments.service.normal.NormalService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".fragments.service.intent.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".fragments.service.bounded.BoundedService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".fragments.service.foregroundservice.MyForegroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".fragments.alarmmanager.MyBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".fragments.jobschedular.SimpleJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".fragments.jobschedular.PeriodicJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".fragments.jobschedular.DelayedJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!--
+         <receiver
+             android:name=".fragments.broadcastreceiver.manifest.ManifestBroadcast"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.BATTERY_CHANGED" />
+                 <action android:name="android.intent.action.AIRPLANE_MODE" />
+             </intent-filter>
+         </receiver>
+        -->
+        <activity android:name=".fragments.permissions.PermissionsActivity" />
+
+        <!--Camera file provider-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="ghanekar.vaibhav.allsamples2"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <!--crop_image_activity-->
+        <activity
+            android:name="ghanekar.vaibhav.allsamples2.fragments.camera.croputil.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

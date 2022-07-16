@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AllSamples2</string>
+    <string name="please_press_back_twice_to_exit">Please press back twice to exit.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello World!</string>
+    <string name="delete">Delete</string>
+
+    <!--crop image-->
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="crop_image_activity_title">Crop</string>
+    <string name="expanded">Expanded, %1$s</string>
+    <string name="collapsed">Collapsed, %1$s</string>
+    <string name="lorem_ipsum">afbisvbishvbhsbvjshvbjhvbjhvbcxhjvbjchbvcjhvbcjhvbcxjhv xcjhv cxjhv cxjhv cjxhv jhcxv jcxhv jhcv cv\nafbisvbishvbhsbvjshvbjhvbjhvbcxhjvbjchbvcjhvbcjhvbcxjhv xcjhv cxjhv cxjhv cjxhv jhcxv jcxhv jhcv cv\nafbisvbishvbhsbvjshvbjhvbjhvbcxhjvbjchbvcjhvbcjhvbcxjhv xcjhv cxjhv cxjhv cjxhv jhcxv jcxhv jhcv cv\nafbisvbishvbhsbvjshvbjhvbjhvbcxhjvbjchbvcjhvbcjhvbcxjhv xcjhv cxjhv cxjhv cjxhv jhcxv jcxhv jhcv cv</string>
+</resources>

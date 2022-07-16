@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowActionModeOverlay">true</item><!--This is used so that the contextual menu layers over the toolbar-->
+    </style>
+
+    <style name="toolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!--textonly with space-->
+    <style name="textViewMaxLength45TextWithSpace" parent="textViewStyleTextWithSpace">
+        <item name="android:maxLength">45</item>
+    </style>
+
+    <style name="textViewStyleTextWithSpace">
+        <item name="android:inputType">textCapSentences|textNoSuggestions|textVisiblePassword</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </item>
+    </style>
+
+    <!--textonly-->
+    <style name="textViewMaxLength45TextOnly" parent="textViewStyleTextOnly">
+        <item name="android:maxLength">45</item>
+    </style>
+
+    <style name="textViewStyleTextOnly">
+        <item name="android:inputType">textCapSentences|textNoSuggestions|textVisiblePassword</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </style>
+
+    <!--alpha-numeric with spaces-->
+    <style name="textViewMaxLength45AllChar" parent="textViewStyleAlphaNumericWithSpace">
+        <item name="android:maxLength">45</item>
+    </style>
+
+    <style name="textViewStyleAlphaNumericWithSpace">
+        <item name="android:inputType">textCapSentences|textNoSuggestions|textVisiblePassword</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\n </item>
+    </style>
+
+    <!--alpha-numeric-->
+    <style name="textViewMaxLength45AlphaNumeric" parent="textViewStyleAlphaNumeric">
+        <item name="android:maxLength">45</item>
+    </style>
+
+    <style name="textViewStyleAlphaNumeric">
+        <item name="android:inputType">textCapSentences|textNoSuggestions|textVisiblePassword</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</item>
+    </style>
+
+    <!--email-->
+    <style name="textViewMaxLength45Email" parent="textViewStyleEmail">
+        <item name="android:maxLength">45</item>
+    </style>
+
+    <style name="textViewStyleEmail">
+        <item name="android:inputType">textNoSuggestions|textVisiblePassword</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.&quot;[]@_-</item>
+    </style>
+
+</resources>
